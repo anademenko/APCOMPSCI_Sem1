@@ -12,9 +12,6 @@ Compiling: the process of translating assembly code into Java bytecode
 F6 executes the NppExec plugin.
 ".class" files contain bytecode.
 Java Virtual Machine reads bytecode -> machine code
-Escape characters: a character preceded by a backslash (\) is an escape sequence that allows for the printing of 
-special characters.
-ASCII art: art/imagery made from typed computer text/symbols
 
 Basic Setup:
 public class filename
@@ -24,3 +21,20 @@ public class filename
 		System.out.println(" ");
 	}
 }
+
+Escape characters: a character preceded by a backslash (\) is an escape sequence that allows for the printing of 
+special characters.
+ASCII art: art/imagery made from typed computer text/symbols
+
+     (()__(()
+     /       \ 
+    ( /    \  \
+     \ o o    /
+     (_()_)__/ \             
+    / _,==.____ \
+   (   |--|      )
+   /\_.|__|'-.__/\_
+  / (        /     \ 
+  \  \      (      /
+   )  '._____)    /    
+(((____.--(((____/mrf
