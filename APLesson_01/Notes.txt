@@ -1,0 +1,26 @@
+AP Computer Science 
+Period 7
+Anastasiya Demenko
+
+Notes 01
+
+Written code (assembly code) is stored in a regular text file with a ".java" extension.
+Set up a file by right clicking in your documents and creating a text file; rename it with the ".java" extension.
+Print function: System.out.println(" ");
+To save: ctrl + s
+Compiling: the process of translating assembly code into Java bytecode
+F6 executes the NppExec plugin.
+".class" files contain bytecode.
+Java Virtual Machine reads bytecode -> machine code
+Escape characters: a character preceded by a backslash (\) is an escape sequence that allows for the printing of 
+special characters.
+ASCII art: art/imagery made from typed computer text/symbols
+
+Basic Setup:
+public class filename
+{
+	public static void main (String[]args)
+	{
+		System.out.println(" ");
+	}
+}
