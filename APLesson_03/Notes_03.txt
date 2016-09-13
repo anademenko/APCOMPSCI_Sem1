@@ -1,0 +1,79 @@
+AP Computer Science 
+Period 7
+Anastasiya Demenko
+
+Notes 03
+
+More on Identifiers
+-unique and descriptive
+-starting new words w/ capital letters helps 
+ distinguish between multiple words
+-firstName easier to read than firstname
+-can also use underscores between words
+
+
+Importing Packages and Classes
+-a class is a container for a program
+-groups of classes are called packages
+-import statements allow one to import other packages/
+ classes into a program
+-an import statement for an entire package:
+	 
+	import packageName.*;
+
+-to import a singles class inside a package:
+
+	import packageName.ClassName;
+
+-each dot in the notation denotes another step down in the
+ heirarchy (ex. import packageName.subPackageName.ClassName)
+
+
+The Scanner Class
+-scans various forms of user input and parses them
+-parse: to analyze a block of data and return the primitive
+ values that it contains
+-to import the Scanner class:
+
+	import java.util.Scanner;
+
+
+Creating a Scanner Object
+-to instantiate a new scanner object (example):
+
+	Scanner keyboard = new Scanner(System.in);
+
+-instantiates a scanner object called keyboard that will
+ read text from system input
+
+
+Methods
+-to get keyboard object to take int values from keyboard (example):
+
+	int num = keyboard.nextInt();
+
+-kb.nextLine(); soaks up extra return characters if needed
+
+nextInt()
+returns the next int value in the input
+
+nextDouble()
+returns the next double value in the input
+
+nextFloat()
+returns the next float value in the input
+
+nextLong()
+returns the next long value in the input
+
+nextByte()
+returns the next byte value in the input
+
+nextShort()
+returns the next short value in the input
+
+next()
+returns the next one word string value in the input
+
+nextLine()
+returns the next multi-word String value in the input
