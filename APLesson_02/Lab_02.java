@@ -7,12 +7,12 @@ public class Lab_02
 		
 		System.out.println(x + " multiplied by " + y + " is " + x*y);
 		
-		String name = "Anastasiya";
+		String name = "Anastasiya Demenko";
 		String address = "4668 Da Vinci Street";
 		String city = "San Diego CA";
 		int zip = 92130;
 		
-		System.out.println(name + "'s address is " + address + ", " + city + " " + zip);
+		System.out.println(name+"\n"+address+"\n"+city+"\n"+zip);
 		
 		int l = 1;
 		int h = 2;
