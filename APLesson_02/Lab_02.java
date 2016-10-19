@@ -9,10 +9,10 @@ public class Lab_02
 		
 		String name = "Anastasiya Demenko";
 		String address = "4668 Da Vinci Street";
-		String city = "San Diego CA";
+		String city = "San Diego, CA";
 		int zip = 92130;
 		
-		System.out.println(name+"\n"+address+"\n"+city+"\n"+zip);
+		System.out.println(name+"\n"+address+"\n"+city+" "+zip);
 		
 		int l = 1;
 		int h = 2;
