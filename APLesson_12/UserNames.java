@@ -1,4 +1,3 @@
-
 public class UserNames
 {
 	//instance variables
