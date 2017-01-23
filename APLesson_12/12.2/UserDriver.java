@@ -15,16 +15,16 @@ public class UserDriver
 		
 		if(response.equals("n"))
 		{
-			User object = new User(firstName, lastName);
-			System.out.println(object);
+			User user1 = new User(firstName, lastName);
+			System.out.println(user1);
 		}
 		
 		if(response.equals("y"))
 		{
 			System.out.println("Please enter an avatar: ");
 			String avatar = kb.nextLine();
-			User object = new User(firstName, lastName, avatar);
-			System.out.println(object);
+			User user1 = new User(firstName, lastName, avatar);
+			System.out.println(user1);
 		}
 	}
 }

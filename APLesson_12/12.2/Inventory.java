@@ -18,7 +18,7 @@ public class Inventory
 		manufacturer = M;
 		name = N;
 		category = "N/A";
-		UPC = (int)(Math.random() * 899999999) + 1000000000;
+		UPC = (int)(Math.random() * 89999999) + 100000000;
 	}
 	
 	public Inventory(String M, String N, String C, double P)
@@ -27,7 +27,7 @@ public class Inventory
 		name = N;
 		category = C;
 		price = P;
-		UPC = (int)(Math.random() * 899999999) + 1000000000;
+		UPC = (int)(Math.random() * 89999999) + 100000000;
 	}
 	
 	public String toString()

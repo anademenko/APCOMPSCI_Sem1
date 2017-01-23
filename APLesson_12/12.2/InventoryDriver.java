@@ -15,8 +15,8 @@ public class InventoryDriver
 		
 		if(response.equals("n"))
 		{
-			Inventory object = new Inventory(manufacturer, name);
-			System.out.println(object);
+			Inventory item1 = new Inventory(manufacturer, name);
+			System.out.println(item1);
 		}
 		
 		if(response.equals("y"))
@@ -25,8 +25,8 @@ public class InventoryDriver
 			String category = kb.nextLine();
 			System.out.println("Please enter the item price: ");
 			double price = kb.nextDouble();
-			Inventory object = new Inventory(manufacturer, name, category, price);
-			System.out.println(object);
+			Inventory item1 = new Inventory(manufacturer, name, category, price);
+			System.out.println(item1);
 		}
 	}
 }
