@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class CountingMachine
 {
-	public static void main (String[]args)
+	public static void main(String[]args)
 	{
 		double total = 0;
 		ArrayList<Money> inventory = new ArrayList<Money>();
