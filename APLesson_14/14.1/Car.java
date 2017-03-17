@@ -1,6 +1,6 @@
-public abstract class Car implements Location
+public class Car implements Location
 {
-	private double[] location;
+	double[] location;
 	private int ID = (int)(Math.random() * 89999) + 100000;
 	
 	public Car()
@@ -8,7 +8,11 @@ public abstract class Car implements Location
 		location = new double[2];
 	}
 	
-	public abstract void move(double X, double Y);
+	public void move(double X, double Y)
+	{
+		location[0] += X;
+		location[1] += Y;
+	}
 	
 	public int getID()
 	{
@@ -19,5 +23,4 @@ public abstract class Car implements Location
 	{
 		return location;
 	}
-	
 }
