@@ -176,23 +176,39 @@ public class Picture extends SimplePicture
     } 
   }
   
-  public void mirrorHorizontal() //in progress
+  public void mirrorHorizontal() 
   {
     Pixel[][] pixels = this.getPixels2D();
     Pixel topPixel = null;
     Pixel bottomPixel = null;
     int height = pixels.length;
-    for (int row = 0; row < height / 2; row++) 
+    for (int col = 0; col < pixels[0].length; col++)
     {
-      for (int col = 0; col < pixels.length; col++)
+      for (int row = 0; row < height / 2; row++)
       {
         topPixel = pixels[row][col];
-        bottomPixel = pixels[row][height - 1 - col];
+        bottomPixel = pixels[height - 1 -row][col];
         bottomPixel.setColor(topPixel.getColor());
       }
-    } 
+    }  
   }
   
+  public void mirrorHorizontalBotToTop()
+  {
+	Pixel[][] pixels = this.getPixels2D();
+    Pixel topPixel = null;
+    Pixel bottomPixel = null;
+    int height = pixels.length;
+    for (int col = 0; col < pixels[0].length; col++)
+    {
+      for (int row = 0; row < height / 2; row++)
+      {
+        topPixel = pixels[row][col];
+        bottomPixel = pixels[height - 1 -row][col];
+        topPixel.setColor(bottomPixel.getColor());
+      }
+    }  
+  }
   
   /** Mirror just part of a picture of a temple */
   public void mirrorTemple()
@@ -208,6 +224,45 @@ public class Picture extends SimplePicture
     {
       // loop from 13 to just before the mirror point
       for (int col = 13; col < mirrorPoint; col++)
+      {
+        
+        leftPixel = pixels[row][col];      
+        rightPixel = pixels[row]                       
+                         [mirrorPoint - col + mirrorPoint];
+        rightPixel.setColor(leftPixel.getColor());
+		count++;
+      }
+    }
+	System.out.println("count: " + count);
+  }
+  
+  public void mirrorArms()
+  {
+	int mirrorPoint = 193;
+    Pixel topPixel = null;
+    Pixel bottomPixel = null;
+	Pixel[][] pixels = this.getPixels2D();
+    for (int col = 100; col < 295; col++)
+    {
+      for (int row = 163; row < mirrorPoint; row++)
+      {
+        topPixel = pixels[row][col];
+        bottomPixel = pixels[mirrorPoint - row + mirrorPoint][col];
+        bottomPixel.setColor(topPixel.getColor());
+      }
+    }  
+  }
+  
+  public void mirrorGull()
+  {
+    int mirrorPoint = 348;
+    Pixel leftPixel = null;
+    Pixel rightPixel = null;
+    Pixel[][] pixels = this.getPixels2D();
+    
+    for (int row = 233; row < 324; row++)
+    {
+      for (int col = 234; col < mirrorPoint; col++)
       {
         
         leftPixel = pixels[row][col];      
@@ -248,6 +303,30 @@ public class Picture extends SimplePicture
       }
     }   
   }
+  
+  public void copy(Picture fromPic, 
+                 int startRow, int endRow, int startCol, int endCol) //revisit this?
+  {
+    Pixel fromPixel = null;
+    Pixel toPixel = null;
+    Pixel[][] toPixels = this.getPixels2D();
+    Pixel[][] fromPixels = fromPic.getPixels2D();
+    for (int fromRow = 0, toRow = startRow; 
+         fromRow < endRow &&
+         toRow < toPixels.length; 
+         fromRow++, toRow++)
+    {
+      for (int fromCol = 0, toCol = startCol; 
+           fromCol < endCol &&
+           toCol < toPixels[0].length;  
+           fromCol++, toCol++)
+      {
+        fromPixel = fromPixels[fromRow][fromCol];
+        toPixel = toPixels[toRow][toCol];
+        toPixel.setColor(fromPixel.getColor());
+      }
+    }   
+  }
 
   /** Method to create a collage of several pictures */
   public void createCollage()
@@ -266,6 +345,25 @@ public class Picture extends SimplePicture
     this.write("collage.jpg");
   }
   
+  public void myCollage() //in progress
+  {
+    Picture flower1 = new Picture("flower1.jpg");
+    Picture flower2 = new Picture("flower2.jpg");
+    this.copy(flower1,0,0);
+    this.copy(flower2,0,100);
+    this.copy(flower1,0,200);
+	Picture flowerNegative = new Picture(flower1);
+	flowerNegative.negate();
+    Picture flowerNoBlue = new Picture(flower2);
+    flowerNoBlue.zeroBlue();
+	Picture flowerGrayscale = new Picture(flower2);
+	flowerGrayscale.grayscale();
+    this.copy(flowerNoBlue,0,300);
+    this.copy(flowerNegative,0,400);
+    this.copy(flowerGrayscale,0,500);
+    this.mirrorHorizontal();
+    this.write("myCollage.jpg");
+  }
   
   /** Method to show large changes in color 
     * @param edgeDist the distance for finding edges

@@ -35,12 +35,43 @@ public class PictureTester
     temple.explore();
   }
   
+  public static void testMirrorArms()
+  {
+    Picture snow = new Picture("snowman.jpg");
+    snow.explore();
+    snow.mirrorArms();
+    snow.explore();
+  }
+  
+  public static void testMirrorGull()
+  {
+    Picture gull = new Picture("seagull.jpg");
+    gull.explore();
+    gull.mirrorGull();
+    gull.explore();
+  }
+  
   /** Method to test the collage method */
   public static void testCollage()
   {
     Picture canvas = new Picture("640x480.jpg");
     canvas.createCollage();
     canvas.explore();
+  }
+  
+  public static void testMyCollage()
+  {
+	Picture canvas = new Picture("640x480.jpg");
+    canvas.myCollage();
+    canvas.explore();
+  }
+  
+  public static void testCopy()
+  {
+	Picture canvas = new Picture("640x480.jpg");
+	Picture whiteFlower = new Picture("whiteFlower.jpg");
+	canvas.copy(whiteFlower,100,438,162,560);
+	canvas.explore();
   }
   
   /** Method to test edgeDetection */
@@ -85,10 +116,18 @@ public class PictureTester
   
   public static void testMirrorHorizontal()
   {
-	Picture caterpillar = new Picture("caterpillar.jpg");
-    caterpillar.explore();
-    caterpillar.mirrorHorizontal();
-    caterpillar.explore();
+	Picture motorcycle = new Picture("redMotorcycle.jpg");
+    motorcycle.explore();
+    motorcycle.mirrorHorizontal();
+    motorcycle.explore();
+  }
+  
+  public static void testMirrorHorizontalBotToTop()
+  {
+	Picture motorcycle = new Picture("redMotorcycle.jpg");
+    motorcycle.explore();
+    motorcycle.mirrorHorizontalBotToTop();
+    motorcycle.explore();
   }
   
   /** Main method for testing.  Every class can have a main
@@ -107,12 +146,14 @@ public class PictureTester
     //testFixUnderwater();
     //testMirrorVertical();
 	//testMirrorVerticalRightToLeft();
-	testMirrorHorizontal();
+	//testMirrorHorizontal();
+	//testMirrorHorizontalBotToTop();
     //testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
     //testCollage();
+	testMyCollage();
     //testCopy();
     //testEdgeDetection();
     //testEdgeDetection2();
