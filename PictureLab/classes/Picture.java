@@ -345,7 +345,7 @@ public class Picture extends SimplePicture
     this.write("collage.jpg");
   }
   
-  public void myCollage() //in progress
+  public void myCollage() 
   {
     Picture flower1 = new Picture("flower1.jpg");
     Picture flower2 = new Picture("flower2.jpg");
@@ -388,7 +388,24 @@ public class Picture extends SimplePicture
         else
           leftPixel.setColor(Color.WHITE);
       }
-    }
+	 }
+	 
+	 Pixel topPixel = null;
+	 Pixel bottomPixel = null;
+	 Color bottomColor = null;
+	 for (int col = 0; col < pixels[0].length; col++)
+	 {
+	  for (int row = 0; 
+           row < pixels.length-1; row++)
+      {
+        topPixel = pixels[row][col];
+        bottomPixel = pixels[row+1][col];
+        bottomColor = bottomPixel.getColor();
+        if (topPixel.colorDistance(bottomColor) > 
+            edgeDist)
+          topPixel.setColor(Color.BLACK);
+      }
+	 }
   }
   
   
