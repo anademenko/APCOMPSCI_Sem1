@@ -47,21 +47,14 @@ public class DeckTester {
 		System.out.println(two);
 		
 		//Third deck object.
-		String[] ranks3 = new String[2];
-		ranks3[0] = "King";
-		ranks3[1] = "Queen";
+		String[] ranks = {"Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King", "Ace"};
+		String[] suits = {"Spades", "Hearts", "Clubs", "Diamonds"};
+		int[] pointValues = {2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11};
 		
-		String[] suits3 = new String[2];
-		suits3[0] = "Spades";
-		suits3[1] = "Clubs";
+		Deck d = new Deck(ranks, suits, pointValues);
+		d.deal();
+		System.out.println(d);
 		
-		int[] values3 = new int[2];
-		values3[0] = 9;
-		values3[1] = 8;
 		
-		Deck three = new Deck(ranks3, suits3, values3);
-		System.out.println(three.isEmpty());
-		three.deal();
-		System.out.println(three);
 	}
 }
