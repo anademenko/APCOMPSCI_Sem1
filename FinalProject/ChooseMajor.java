@@ -8,7 +8,7 @@ public class ChooseMajor extends JFrame
 	private JButton buttonSelect;
 	private JComboBox<String> comboBoxChoices;
 	
-	private String major = "";
+	private String major = "Advertising and Marketing";
 	
 	public ChooseMajor()
 	{
@@ -53,7 +53,8 @@ public class ChooseMajor extends JFrame
 		@Override
 		public void actionPerformed(ActionEvent e)
 		{
-			System.out.println(major);
+			Sorting object = new Sorting(getMajor());
+			System.out.println(object);
 			System.exit(0);
 		}
 	}
@@ -65,6 +66,11 @@ public class ChooseMajor extends JFrame
 		{
 			major = (String)comboBoxChoices.getSelectedItem();
 		}
+	}
+	
+	public String getMajor()
+	{
+		return major;
 	}
 	
 	public static void main(String[] args)
