@@ -53,7 +53,7 @@ public class ChooseMajor extends JFrame
 		@Override
 		public void actionPerformed(ActionEvent e)
 		{
-			Sorting object = new Sorting(getMajor());
+			MajorSort object = new MajorSort(getMajor());
 			System.out.println(object);
 			System.exit(0);
 		}

@@ -130,10 +130,10 @@ public class Magpie2
 	   String lastChar = statement.substring(statement.length() - 1);
 	   if(lastChar.equals("."))
 	   {
-		   statement = statement.substring(statement.length() - 1);
+		   statement = statement.substring(0, statement.length() - 1);
 	   }
-	   int psn = findKeyword(statement, "I want to ");
-	   String restOfStatement = statement.substring(psn + 10);
+	   int psn = findKeyword(statement, "I want to ", 0);
+	   String restOfStatement = statement.substring(psn + 10).trim();
 	   return "What would it mean to" + restOfStatement;
 	}
 

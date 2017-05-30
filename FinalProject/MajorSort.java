@@ -1,20 +1,22 @@
-public class Sorting
+public class MajorSort
 {
 	private String major;
 	private String category;
 	private String courses;
+	private String career;
 	
-	public Sorting()
+	public MajorSort()
 	{
 		major= "";
 		category = "";
 	}
 	
-	public Sorting(String m)
+	public MajorSort(String m)
 	{
 		major= m;
 		category = category(major);
 		courses = courses(category);
+		career = career(major);
 	}
 	
 	public String getMajor()
@@ -30,6 +32,11 @@ public class Sorting
 	public String getCourses()
 	{
 		return courses;
+	}
+	
+	public String getCareer()
+	{
+		return career;
 	}
 	
 	public String category(String major)
@@ -160,8 +167,147 @@ public class Sorting
 		return "";
 	}
 	
+	public String career(String m)
+	{
+		if(m.equals("Accounting"))
+			return "\n\tBudget Analyst" + 
+				   "\n\tForensic Accountant" + 
+				   "\n\tTax Accountant";
+		else if (m.equals("Advertising and Marketing"))
+			return "\n\tAdvertising" + 
+				   "\n\tPromotions" + 
+				   "\n\tMarketing Manager" + 
+				   "\n\tMarket Research Analyst" + 
+				   "\n\tMeeting" + 
+				   "\n\tConvention" + 
+				   "\n\tEvent Planner";
+		else if (m.equals("Animation"))
+			return "\n\tCartoonist" + 
+				   "\n\tMotion Graphics Designer" + 
+				   "\n\tStoryboard Artist";
+		else if (m.equals("Applied Mathematics"))
+			return "\n\tFluid Dynamics" + 
+				   "\n\tGame Theory" + 
+				   "\n\tOperations Research";
+		else if (m.equals("Biology"))
+			return "\n\tMicrobiologist" + 
+				   "\n\tPharmacologist" + 
+				   "\n\tResearch Scientist";
+		else if (m.equals("Biomathematics"))
+			return "\n\tBiostatistician" + 
+				   "\n\tMathematics Professor" + 
+				   "\n\tResearch Scientist";
+		else if (m.equals("Biomedical Engineering"))
+			return "\n\tBioinstrumentation" + 
+				   "\n\tBiomaterials" + 
+				   "\n\tBiomechanics";
+		else if (m.equals("Business Administration"))
+			return "\n\tBusiness Services Coordinator" + 
+				   "\n\tGlobal Program Manager" + 
+				   "\n\tInvestment Analyst";
+		else if (m.equals("Chemistry"))
+			return "\n\tToxicologist" + 
+				   "\n\tResearch Scientist" + 
+				   "\n\tForensic Scientist" + 
+				   "\n\tChemical Engineer" + 
+				   "\n\tClinical Biochemistry" + 
+				   "\n\tAnalytical Chemist" + 
+				   "\n\tPharmacologist";
+		else if (m.equals("Computer Programming") || m.equals("Computer Science"))
+			return "\n\tSoftware Applications Developer" + 
+				   "\n\tComputer Systems Analyst" + 
+				   "\n\tNetwork Systems Administrator" + 
+				   "\n\tWeb Developer";
+		else if (m.equals("Criminal Justice"))
+			return "\n\tParalegal" + 
+				   "\n\tPolice Officer" + 
+				   "\n\tPrivate Investigator" + 
+				   "\n\tHomicide Detective" + 
+				   "\n\tFBI Agent" + 
+				   "\n\tDEA Agent" + 
+				   "\n\tAir Marshal" + 
+				   "\n\tBorder Patrol Agent";
+		else if (m.equals("Economics"))
+			return "\n\tMarket Research Analyst" + 
+				   "\n\tEconomic Consultant, Actuary" + 
+				   "\n\tCredit Analyst" + 
+				   "\n\tLawyer" + 
+				   "\n\tAccountant";
+		else if (m.equals("Electrical Engineering"))
+			return "\tElectrician";
+		else if (m.equals("English"))
+			return "\n\tNews Reporter" + 
+				   "\n\tPublic Relations" + 
+				   "\n\tBlogger" + 
+				   "\n\tContent Marketing" + 
+				   "\n\tTechnical Writer" + 
+				   "\n\tJournalism" + 
+				   "\n\tSales" + 
+				   "\n\tStock Broker";
+		else if (m.equals("Environmental Science"))
+			return "\n\tRecycling Officer" + 
+				   "\n\tNature Conservation Officer" + 
+				   "\n\tWaste Management Officer" + 
+				   "\n\tWater Quality Scientist";
+		else if (m.equals("Game Design"))
+			return "\n\tGame Animator" + 
+				   "\n\tGame Audio Engineer" + 
+				   "\n\tGame Programmer" + 
+				   "\n\tCreative Game Director" + 
+				   "\n\tGame Artist";
+		else if (m.equals("History"))
+			return "\n\trchivist" + 
+				   "\n\tEditorial Assistant" + 
+				   "\n\tArchaeologist" + 
+				   "\n\tAcademic Librarian" + 
+				   "\n\tBroadcast Journalist" + 
+				   "\n\tInformation Officer";
+		else if (m.equals("Journalism"))
+			return "\n\tForeign Correspondent" + 
+				   "\n\tInvestigative Journalist" + 
+				   "\n\tColumnist" + 
+				   "\n\tProfessor" + 
+				   "\n\tSportscaster";
+		else if (m.equals("Mechanical Engineering"))
+			return "\n\tMachinery Manufacturing" + 
+				   "\n\tAerospace Manufacturing" + 
+				   "\n\tNuclear Engineer" + 
+				   "\n'tAutomotive Engineer";
+		else if (m.equals("Photography"))
+			return "\n\tGraphic Designer" + 
+				   "\n\tMagazine Features Editor" + 
+				   "\n\tMedical Illustrator" + 
+				   "\n\tTV Camera Operator";
+		else if (m.equals("Physics"))
+			return "\n\tGeophysicist" + 
+				   "\n\tMetallurgist" + 
+				   "\n\tResearch Scientist" + 
+				   "\n\tSeismic Interpreter";
+		else if (m.equals("Political Science"))
+			return "\n\tAttorney" + 
+				   "\n\tLegislative Assistant" + 
+				   "\n\tPolicy Analyst" + 
+				   "\n\tPolitical Consultant";
+		else if (m.equals("Psychology"))
+			return "\n\tChild Psychologist" + 
+				   "\n\tClinical Psychologist" +
+				   "\n\tCounselor" + 
+				   "\n\tSocial Worker";
+		else if (m.equals("Statistics"))
+			return "\n\tActuary" + 
+				   "\n\tAppraiser" + 
+				   "\n\tBiostatistician" + 
+				   "\n\tStatistical Consultant";
+		else if (m.equals("Theatre"))
+			return "\n/tDancer" + 
+				   "\n\tDirector" + 
+				   "\n\tPlaywright" + 
+				   "\n\tStage Manager";
+		return "";
+	}
+	
 	public String toString()
 	{
-		return "Major: " + getMajor() + "\nCategory: " + getCategory() + "\nCourse List: \n" + getCourses();
+		return "\nMajor: " + getMajor() + "\n\nCategory: " + getCategory() + "\n\nCourse List: \n" + getCourses() + "\n\nPotential Careers: " + getCareer();
 	}
 }
