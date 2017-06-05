@@ -94,11 +94,13 @@ public class ChooseCourses extends JFrame
 		@Override
 		public void actionPerformed(ActionEvent e)
 		{
-			System.out.println("Inputted Courses:");
-			for (String c : classes)
-			{
-				System.out.print("\n" + c);
-			}
+			// System.out.println("Inputted Courses:");
+			// for (String c : classes)
+			// {
+				// System.out.print("\n" + c);
+			// }
+			CourseSort object = new CourseSort(getCourses());
+			System.out.println(object);
 			System.exit(0);
 		}
 	}
@@ -137,6 +139,11 @@ public class ChooseCourses extends JFrame
 		{
 			classes[3] = (String)comboBoxClassFour.getSelectedItem(); 
 		}
+	}
+	
+	public String[] getCourses()
+	{
+		return classes;
 	}
 	
 	public static void main(String[] args)
