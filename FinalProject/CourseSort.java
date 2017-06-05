@@ -104,6 +104,6 @@ public class CourseSort
 	
 	public String toString()
 	{
-		return "Based on the courses you inputted, please consider the following majors: " + majors;
+		return "Based on the courses you've inputted, please consider the following majors: " + majors;
 	}
 }
