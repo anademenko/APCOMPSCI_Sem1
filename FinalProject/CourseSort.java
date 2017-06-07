@@ -74,36 +74,67 @@ public class CourseSort
 	{
 		if(lang > 0)
 		{
-			majors = majors + "\n[Insert Language Majors Here]";
+			majors = majors + "<br>" + 
+								"<br>Language: " + 
+								"<br>Foreign Language Studies";
 		}
 		if(math > 0)
 		{
-			majors = majors + "\n[Insert Math Majors Here]";
+			majors = majors + "<br>" + 
+								"<br>Math: " + 
+								"<br>Applied Mathematics" +
+								"<br>Statistics" +
+								"<br>Biomathematics";
 		}
 		if(sci > 0)
 		{
-			majors = majors + "\n[Insert Science Majors Here]";
+			majors = majors + "<br>" + 
+								"<br>Science: " + 
+								"<br>Biology" +
+								"<br>Chemistry" +
+								"<br>Physics" +
+								"<br>Environmental Science" +
+								"<br>Psychology";
 		}
 		if(hum > 0)
 		{
-			majors = majors + "\n[Insert Humanities Majors Here]";
+			majors = majors + "<br>" + 
+								"<br>Humanities: " + 
+								"<br>Journalism" +
+								"<br>Criminal Justice" +
+								"<br>English" +
+								"<br>History" +
+								"<br>Political Science";
 		}
 		if(bus > 0)
 		{
-			majors = majors + "\n[Insert Business Majors Here]";
+			majors = majors + "<br>" + 
+								"<br>Business: " + 
+								"<br>Business Administration" +
+								"<br>Accounting" +
+								"<br>Economics" +
+								"<br>Advertising and Marketing";
 		}
 		if(art > 0)
 		{
-			majors = majors + "\n[Insert Creative Majors Here]";
+			majors = majors + "<br>" + 
+								"<br>Arts: " + 
+								"<br>Animation" +
+								"<br>Photography" +
+								"<br>Theatre";
 		}
 		if(tech > 0)
 		{
-			majors = majors + "\n[Insert Technology Majors Here]";
+			majors = majors + "<br>" + 
+								"<br>Technology: " + 
+								"<br>Computer Science" +
+								"<br>Game Design" +
+								"<br>Computer Programming";
 		}
 	}
 	
 	public String toString()
 	{
-		return "Based on the courses you've inputted, please consider the following majors: " + majors;
+		return "<html>Based on the courses you've inputted, please consider the following majors: " + majors + "</html>";
 	}
 }

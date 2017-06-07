@@ -23,7 +23,7 @@ public class CompSciFinal extends JFrame
 		JPanel panel = new JPanel();
 		getContentPane().add(panel);
 		
-		labelPrompt = new JLabel("Would you like to select a major or input your courses?");
+		labelPrompt = new JLabel("Would you like to select a major or input courses?");
 		labelPrompt.setVisible(true);
 		panel.add(labelPrompt);
 		
@@ -45,7 +45,7 @@ public class CompSciFinal extends JFrame
 		public void actionPerformed(ActionEvent e)
 		{
 			ChooseMajor.main(new String[0]);
-			//System.exit(0);
+			setVisible(false);
 		}
 	}
 	
@@ -55,7 +55,7 @@ public class CompSciFinal extends JFrame
 		public void actionPerformed(ActionEvent e)
 		{
 			ChooseCourses.main(new String[0]);
-			//System.exit(0);
+			setVisible(false);
 		}
 	}
 	

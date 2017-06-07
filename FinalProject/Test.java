@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.event.*;
 import java.awt.*;
 
-public class ChooseCourses extends JFrame
+public class Test extends JFrame
 {
 	private JLabel labelPrompt, labelResults;
 	private JButton buttonSelect;
@@ -11,7 +11,7 @@ public class ChooseCourses extends JFrame
 	
 	private String[] classes;
 	
-	public ChooseCourses()
+	public Test()
 	{
 		classes = new String[4];
 		
@@ -160,7 +160,7 @@ public class ChooseCourses extends JFrame
 			@Override
 			public void run()
 			{
-				new ChooseCourses().setVisible(true);
+				new Test().setVisible(true);
 			}
 		});
 	}

@@ -96,73 +96,73 @@ public class MajorSort
 		if(c.equals("Business"))
 		{
 			return "REQUIRED COURSES" +
-				   "\n\tWriting and Rhetoric I and II (3 credits each)" +
-				   "\n\tIntro to Business (3 credits)" +
-				   "\n\tPublic Speaking (3 credits)" +
-				   "\n\tPrinciples Microeconomics (3 credits)" +
-				   "\n\tCalculus for Business (3 credits)" +
-				   "\n\tIntro to Marketing (3 credits)" +
-				   "\n\tInternational Business, Management, and Marketing (3 credits each)" +
-				   "\n\tStrategic Management (3 credits)";
+				   "<br>\tWriting and Rhetoric I and II (3 credits each)" +
+				   "<br>\tIntro to Business (3 credits)" +
+				   "<br>\tPublic Speaking (3 credits)" +
+				   "<br>\tPrinciples Microeconomics (3 credits)" +
+				   "<br>\tCalculus for Business (3 credits)" +
+				   "<br>\tIntro to Marketing (3 credits)" +
+				   "<br>\tInternational Business, Management, and Marketing (3 credits each)" +
+				   "<br>\tStrategic Management (3 credits)";
 		}
 		else if(c.equals("Science"))
 		{
 			return "REQUIRED COURSES" +
-				   "\n\tGeneral Biology I and II with Lab (3 credits + 1 credit for Lab each)" +
-				   "\n\tGeneral Chemistry I and II with Lab (3 credits + 1 credit for Lab each)" +
-				   "\n\tGeneral Physics Lab I and II (1 credit each)" +
-				   "\n\tCalculus I (4 credits)" +
-				   "\n\tCalculus II (4 credits)" +
-				   "\n\tWriting and Rhetoric (3 credits)" +
-				   "\n\tOrganic Chemistry with Lab (4 credits + 1 credit for Lab)" +
-				   "\n\tEcology (3 credits)" +
-				   "\n\tSenior Seminar (1 credit)";
+				   "<br>\tGeneral Biology I and II with Lab (3 credits + 1 credit for Lab each)" +
+				   "<br>\tGeneral Chemistry I and II with Lab (3 credits + 1 credit for Lab each)" +
+				   "<br>\tGeneral Physics Lab I and II (1 credit each)" +
+				   "<br>\tCalculus I (4 credits)" +
+				   "<br>\tCalculus II (4 credits)" +
+				   "<br>\tWriting and Rhetoric (3 credits)" +
+				   "<br>\tOrganic Chemistry with Lab (4 credits + 1 credit for Lab)" +
+				   "<br>\tEcology (3 credits)" +
+				   "<br>\tSenior Seminar (1 credit)";
 		}
 		else if(c.equals("Engineering") || c.equals("Technology"))
 		{
 			return "REQUIRED COURSES" +
-				   "\n\tIntro to Engineering (2 credits)" +
-				   "\n\tGeneral Chemistry with Lab (4 credits)" +
-				   "\n\tMultivariable Calculus (4 credits)" +
-				   "\n\tDifferential Equations (3 credits)" +
-				   "\n\tPhysics with Calculus (4 credits)" +
-				   "\n\tGeneral Physics Lab (2 credits)" +
-				   "\n\tSenior Design (4 credits)";
+				   "<br>\tIntro to Engineering (2 credits)" +
+				   "<br>\tGeneral Chemistry with Lab (4 credits)" +
+				   "<br>\tMultivariable Calculus (4 credits)" +
+				   "<br>\tDifferential Equations (3 credits)" +
+				   "<br>\tPhysics with Calculus (4 credits)" +
+				   "<br>\tGeneral Physics Lab (2 credits)" +
+				   "<br>\tSenior Design (4 credits)";
 		}
 		else if(c.equals("Mathematics"))
 		{
 			return "REQUIRED COURSES" + 
-				   "\n\tIntroduction to Advance Mathematics (3 credits)" + 
-				   "\n\tAdvanced Calculus (3 credits)" +
-				   "\n\tAlgebraic Structures (3 credits)" +
-				   "\n\tMathematical Statistics (3 credits)" +
-				   "\n\tSenior Seminar (1 credit)" +
-				   "\nIn addition, three courses from each of the following lists: " +
-				   "\nList One" +
-				   "\n\tIntroduction to Combinatorics (3 credits) /n/tComplex Variables (3 credits) /n/tCollege Geometry (3 credits) \n\tNumber Theory (3 credits) \n\tTopics in Advanced Calculus (3 credits) \n\tTopics in Algebraic Structures (3 credits) \n\tTopology (3 credits)" +
-				   "\nList Two" +
-				   "\n\tAdvanced Differential Equations (3 credits) \n\tGraph Theory (3 credits) \n\tMathematical Modeling (3 credits) \n\tMathematical Statistics II (3 credits) \n\tNumerical Analysis (3 credits) \n\tMathematical Logic (3 credits) \n\tAxiomatic Set Theory (3 credits)";
+				   "<br>\tIntroduction to Advance Mathematics (3 credits)" + 
+				   "<br>\tAdvanced Calculus (3 credits)" +
+				   "<br>\tAlgebraic Structures (3 credits)" +
+				   "<br>\tMathematical Statistics (3 credits)" +
+				   "<br>\tSenior Seminar (1 credit)" +
+				   "<br>In addition, three courses from each of the following lists: " +
+				   "<br>List One" +
+				   "<br>\tIntroduction to Combinatorics (3 credits) /n/tComplex Variables (3 credits) /n/tCollege Geometry (3 credits) \n\tNumber Theory (3 credits) \n\tTopics in Advanced Calculus (3 credits) \n\tTopics in Algebraic Structures (3 credits) \n\tTopology (3 credits)" +
+				   "<br>List Two" +
+				   "<br>\tAdvanced Differential Equations (3 credits) \n\tGraph Theory (3 credits) \n\tMathematical Modeling (3 credits) \n\tMathematical Statistics II (3 credits) \n\tNumerical Analysis (3 credits) \n\tMathematical Logic (3 credits) \n\tAxiomatic Set Theory (3 credits)";
 		}
 		else if(c.equals("Arts"))
 		{
 			return "REQUIRED COURSES" +
-				   "\n\tArt History (3 credits)" +
-				   "\n\tWriting and Rhetoric (3 credits)" +
-				   "\n\t2D and 3D Design (3 credits each)" +
-				   "\n\tModern and Contemporary Art (3 credits each)" +
-				   "\n\tArt Electives (3 credits each)" +
-				   "\n\tThesis I (3 credits)" +
-				   "\n\tThesis II (3 credits)";
+				   "<br>\tArt History (3 credits)" +
+				   "<br>\tWriting and Rhetoric (3 credits)" +
+				   "<br>\t2D and 3D Design (3 credits each)" +
+				   "<br>\tModern and Contemporary Art (3 credits each)" +
+				   "<br>\tArt Electives (3 credits each)" +
+				   "<br>\tThesis I (3 credits)" +
+				   "<br>\tThesis II (3 credits)";
 		}	
 		else if(c.equals("Humanities"))
 		{
 			return "REQUIRED COURSES" +
-				   "\n\tFirst Year Experience (1 credit)" +
-				   "\n\tWriting and Rhetoric I (3 credits)" +
-				   "\n\tWriting and Rhetoric II (3 credits)" +
-				   "\n\tAmerican Government (3 credits)" +
-				   "\n\tLaw and Ethics(Criminal Justice, Journalism) (3 credits)" +
-				   "\n\tSenior Thesis/Project (3 credits)";
+				   "<br>\tFirst Year Experience (1 credit)" +
+				   "<br>\tWriting and Rhetoric I (3 credits)" +
+				   "<br>\tWriting and Rhetoric II (3 credits)" +
+				   "<br>\tAmerican Government (3 credits)" +
+				   "<br>\tLaw and Ethics(Criminal Justice, Journalism) (3 credits)" +
+				   "<br>\tSenior Thesis/Project (3 credits)";
 		}
 		return "";
 	}
@@ -170,144 +170,144 @@ public class MajorSort
 	public String career(String m)
 	{
 		if(m.equals("Accounting"))
-			return "\n\tBudget Analyst" + 
-				   "\n\tForensic Accountant" + 
-				   "\n\tTax Accountant";
+			return "<br>\tBudget Analyst" + 
+				   "<br>\tForensic Accountant" + 
+				   "<br>\tTax Accountant";
 		else if (m.equals("Advertising and Marketing"))
-			return "\n\tAdvertising" + 
-				   "\n\tPromotions" + 
-				   "\n\tMarketing Manager" + 
-				   "\n\tMarket Research Analyst" + 
-				   "\n\tMeeting" + 
-				   "\n\tConvention" + 
-				   "\n\tEvent Planner";
+			return "<br>\tAdvertising" + 
+				   "<br>\tPromotions" + 
+				   "<br>\tMarketing Manager" + 
+				   "<br>\tMarket Research Analyst" + 
+				   "<br>\tMeeting" + 
+				   "<br>\tConvention" + 
+				   "<br>\tEvent Planner";
 		else if (m.equals("Animation"))
-			return "\n\tCartoonist" + 
-				   "\n\tMotion Graphics Designer" + 
-				   "\n\tStoryboard Artist";
+			return "<br>\tCartoonist" + 
+				   "<br>\tMotion Graphics Designer" + 
+				   "<br>\tStoryboard Artist";
 		else if (m.equals("Applied Mathematics"))
-			return "\n\tFluid Dynamics" + 
-				   "\n\tGame Theory" + 
-				   "\n\tOperations Research";
+			return "<br>\tFluid Dynamics" + 
+				   "<br>\tGame Theory" + 
+				   "<br>\tOperations Research";
 		else if (m.equals("Biology"))
-			return "\n\tMicrobiologist" + 
-				   "\n\tPharmacologist" + 
-				   "\n\tResearch Scientist";
+			return "<br>\tMicrobiologist" + 
+				   "<br>\tPharmacologist" + 
+				   "<br>\tResearch Scientist";
 		else if (m.equals("Biomathematics"))
-			return "\n\tBiostatistician" + 
-				   "\n\tMathematics Professor" + 
-				   "\n\tResearch Scientist";
+			return "<br>\tBiostatistician" + 
+				   "<br>\tMathematics Professor" + 
+				   "<br>\tResearch Scientist";
 		else if (m.equals("Biomedical Engineering"))
-			return "\n\tBioinstrumentation" + 
-				   "\n\tBiomaterials" + 
-				   "\n\tBiomechanics";
+			return "<br>\tBioinstrumentation" + 
+				   "<br>\tBiomaterials" + 
+				   "<br>\tBiomechanics";
 		else if (m.equals("Business Administration"))
-			return "\n\tBusiness Services Coordinator" + 
-				   "\n\tGlobal Program Manager" + 
-				   "\n\tInvestment Analyst";
+			return "<br>\tBusiness Services Coordinator" + 
+				   "<br>\tGlobal Program Manager" + 
+				   "<br>\tInvestment Analyst";
 		else if (m.equals("Chemistry"))
-			return "\n\tToxicologist" + 
-				   "\n\tResearch Scientist" + 
-				   "\n\tForensic Scientist" + 
-				   "\n\tChemical Engineer" + 
-				   "\n\tClinical Biochemistry" + 
-				   "\n\tAnalytical Chemist" + 
-				   "\n\tPharmacologist";
+			return "<br>\tToxicologist" + 
+				   "<br>\tResearch Scientist" + 
+				   "<br>tForensic Scientist" + 
+				   "<br>\tChemical Engineer" + 
+				   "<br>\tClinical Biochemistry" + 
+				   "<br>\tAnalytical Chemist" + 
+				   "<br>\tPharmacologist";
 		else if (m.equals("Computer Programming") || m.equals("Computer Science"))
-			return "\n\tSoftware Applications Developer" + 
-				   "\n\tComputer Systems Analyst" + 
-				   "\n\tNetwork Systems Administrator" + 
-				   "\n\tWeb Developer";
+			return "<br>\tSoftware Applications Developer" + 
+				   "<br>\tComputer Systems Analyst" + 
+				   "<br>\tNetwork Systems Administrator" + 
+				   "<br>\tWeb Developer";
 		else if (m.equals("Criminal Justice"))
-			return "\n\tParalegal" + 
-				   "\n\tPolice Officer" + 
-				   "\n\tPrivate Investigator" + 
-				   "\n\tHomicide Detective" + 
-				   "\n\tFBI Agent" + 
-				   "\n\tDEA Agent" + 
-				   "\n\tAir Marshal" + 
-				   "\n\tBorder Patrol Agent";
+			return "<br>\tParalegal" + 
+				   "<br>\tPolice Officer" + 
+				   "<br>\tPrivate Investigator" + 
+				   "<br>\tHomicide Detective" + 
+				   "<br>\tFBI Agent" + 
+				   "<br>\tDEA Agent" + 
+				   "<br>\tAir Marshal" + 
+				   "<br>\tBorder Patrol Agent";
 		else if (m.equals("Economics"))
-			return "\n\tMarket Research Analyst" + 
-				   "\n\tEconomic Consultant, Actuary" + 
-				   "\n\tCredit Analyst" + 
-				   "\n\tLawyer" + 
-				   "\n\tAccountant";
+			return "<br>\tMarket Research Analyst" + 
+				   "<br>\tEconomic Consultant, Actuary" + 
+				   "<br>\tCredit Analyst" + 
+				   "<br>\tLawyer" + 
+				   "<br>\tAccountant";
 		else if (m.equals("Electrical Engineering"))
-			return "\tElectrician";
+			return "<br>\tElectrician";
 		else if (m.equals("English"))
-			return "\n\tNews Reporter" + 
-				   "\n\tPublic Relations" + 
-				   "\n\tBlogger" + 
-				   "\n\tContent Marketing" + 
-				   "\n\tTechnical Writer" + 
-				   "\n\tJournalism" + 
-				   "\n\tSales" + 
-				   "\n\tStock Broker";
+			return "<br>\tNews Reporter" + 
+				   "<br>\tPublic Relations" + 
+				   "<br>\tBlogger" + 
+				   "<br>\tContent Marketing" + 
+				   "<br>\tTechnical Writer" + 
+				   "<br>\tJournalism" + 
+				   "<br>\tSales" + 
+				   "<br>\tStock Broker";
 		else if (m.equals("Environmental Science"))
-			return "\n\tRecycling Officer" + 
-				   "\n\tNature Conservation Officer" + 
-				   "\n\tWaste Management Officer" + 
-				   "\n\tWater Quality Scientist";
+			return "<br>\tRecycling Officer" + 
+				   "<br>\tNature Conservation Officer" + 
+				   "<br>\tWaste Management Officer" + 
+				   "<br>\tWater Quality Scientist";
 		else if (m.equals("Game Design"))
-			return "\n\tGame Animator" + 
-				   "\n\tGame Audio Engineer" + 
-				   "\n\tGame Programmer" + 
-				   "\n\tCreative Game Director" + 
-				   "\n\tGame Artist";
+			return "<br>\tGame Animator" + 
+				   "<br>\tGame Audio Engineer" + 
+				   "<br>\tGame Programmer" + 
+				   "<br>\tCreative Game Director" + 
+				   "<br>\tGame Artist";
 		else if (m.equals("History"))
-			return "\n\trchivist" + 
-				   "\n\tEditorial Assistant" + 
-				   "\n\tArchaeologist" + 
-				   "\n\tAcademic Librarian" + 
-				   "\n\tBroadcast Journalist" + 
-				   "\n\tInformation Officer";
+			return "<br>\trchivist" + 
+				   "<br>\tEditorial Assistant" + 
+				   "<br>\tArchaeologist" + 
+				   "<br>\tAcademic Librarian" + 
+				   "<br>\tBroadcast Journalist" + 
+				   "<br>\tInformation Officer";
 		else if (m.equals("Journalism"))
-			return "\n\tForeign Correspondent" + 
-				   "\n\tInvestigative Journalist" + 
-				   "\n\tColumnist" + 
-				   "\n\tProfessor" + 
-				   "\n\tSportscaster";
+			return "<br>\tForeign Correspondent" + 
+				   "<br>\tInvestigative Journalist" + 
+				   "<br>\tColumnist" + 
+				   "<br>\tProfessor" + 
+				   "<br>\tSportscaster";
 		else if (m.equals("Mechanical Engineering"))
-			return "\n\tMachinery Manufacturing" + 
-				   "\n\tAerospace Manufacturing" + 
-				   "\n\tNuclear Engineer" + 
-				   "\n'tAutomotive Engineer";
+			return "<br>\tMachinery Manufacturing" + 
+				   "<br>\tAerospace Manufacturing" + 
+				   "<br>\tNuclear Engineer" + 
+				   "<br>'tAutomotive Engineer";
 		else if (m.equals("Photography"))
-			return "\n\tGraphic Designer" + 
-				   "\n\tMagazine Features Editor" + 
-				   "\n\tMedical Illustrator" + 
-				   "\n\tTV Camera Operator";
+			return "<br>\tGraphic Designer" + 
+				   "<br>\tMagazine Features Editor" + 
+				   "<br>\tMedical Illustrator" + 
+				   "<br>\tTV Camera Operator";
 		else if (m.equals("Physics"))
-			return "\n\tGeophysicist" + 
-				   "\n\tMetallurgist" + 
-				   "\n\tResearch Scientist" + 
-				   "\n\tSeismic Interpreter";
+			return "<br>\tGeophysicist" + 
+				   "<br>\tMetallurgist" + 
+				   "<br>\tResearch Scientist" + 
+				   "<br>\tSeismic Interpreter";
 		else if (m.equals("Political Science"))
-			return "\n\tAttorney" + 
-				   "\n\tLegislative Assistant" + 
-				   "\n\tPolicy Analyst" + 
-				   "\n\tPolitical Consultant";
+			return "<br>\tAttorney" + 
+				   "<br>\tLegislative Assistant" + 
+				   "<br>\tPolicy Analyst" + 
+				   "<br>\tPolitical Consultant";
 		else if (m.equals("Psychology"))
-			return "\n\tChild Psychologist" + 
-				   "\n\tClinical Psychologist" +
-				   "\n\tCounselor" + 
-				   "\n\tSocial Worker";
+			return "<br>\tChild Psychologist" + 
+				   "<br>\tClinical Psychologist" +
+				   "<br>\tCounselor" + 
+				   "<br>\tSocial Worker";
 		else if (m.equals("Statistics"))
-			return "\n\tActuary" + 
-				   "\n\tAppraiser" + 
-				   "\n\tBiostatistician" + 
-				   "\n\tStatistical Consultant";
+			return "<br>\tActuary" + 
+				   "<br>\tAppraiser" + 
+				   "<br>\tBiostatistician" + 
+				   "<br>\tStatistical Consultant";
 		else if (m.equals("Theatre"))
-			return "\n/tDancer" + 
-				   "\n\tDirector" + 
-				   "\n\tPlaywright" + 
-				   "\n\tStage Manager";
+			return "<br>\tDancer" + 
+				   "<br>\tDirector" + 
+				   "<br>\tPlaywright" + 
+				   "<br>\tStage Manager";
 		return "";
 	}
 	
 	public String toString()
 	{
-		return "\nMajor: " + getMajor() + "\n\nCategory: " + getCategory() + "\n\nCourse List: \n" + getCourses() + "\n\nPotential Careers: " + getCareer();
+		return "<html>Major: " + getMajor() + "<br><br>Category: " + getCategory() + "<br><br>Course List: <br>" + getCourses() + "<br><br>Potential Careers: " + getCareer() + "</html>";
 	}
 }

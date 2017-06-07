@@ -4,9 +4,10 @@ import java.awt.*;
 
 public class ChooseMajor extends JFrame
 {
-	private JLabel labelPrompt;
+	private JLabel labelPrompt, labelResults;
 	private JButton buttonSelect;
 	private JComboBox<String> comboBoxChoices;
+	private JPanel panelMajor, panelResults;
 	
 	private String major = "Advertising and Marketing";
 	
@@ -22,12 +23,12 @@ public class ChooseMajor extends JFrame
 	
 	private void createView()
 	{
-		JPanel panel = new JPanel();
-		getContentPane().add(panel);
+		panelMajor = new JPanel();
+		getContentPane().add(panelMajor);
 		
 		labelPrompt = new JLabel("Select a major from the list and click OK.");
 		labelPrompt.setVisible(true);
-		panel.add(labelPrompt);
+		panelMajor.add(labelPrompt);
 		
 		String[] choices = {"Advertising and Marketing", "Animation", "Applied Mathematics", 
 								"Biology", "Biomathematics", "Biomedical Engineering", "Business Administration",
@@ -40,12 +41,12 @@ public class ChooseMajor extends JFrame
 		comboBoxChoices.setVisible(true);
 		comboBoxChoices.addActionListener(
 				new ComboBoxChoicesActionListener());
-		panel.add(comboBoxChoices);
+		panelMajor.add(comboBoxChoices);
 		
 		buttonSelect = new JButton("OK");
 		buttonSelect.addActionListener(
 				new ButtonSelectActionListener());
-		panel.add(buttonSelect);
+		panelMajor.add(buttonSelect);
 	}
 	
 	private class ButtonSelectActionListener implements ActionListener
@@ -54,8 +55,19 @@ public class ChooseMajor extends JFrame
 		public void actionPerformed(ActionEvent e)
 		{
 			MajorSort object = new MajorSort(getMajor());
-			System.out.println(object);
-			System.exit(0);
+			
+			panelMajor.setVisible(false);
+
+			panelResults = new JPanel();
+			panelResults.setLayout(new BoxLayout(panelResults, BoxLayout.PAGE_AXIS));
+			getContentPane().add(panelResults);
+			
+			String results = object.toString();
+			labelResults = new JLabel(results);
+			labelResults.setVisible(true);
+			panelResults.add(labelResults);
+			
+			pack();
 		}
 	}
 	
