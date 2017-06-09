@@ -30,12 +30,31 @@ public class ChooseMajor extends JFrame
 		labelPrompt.setVisible(true);
 		panelMajor.add(labelPrompt);
 		
-		String[] choices = {"Advertising and Marketing", "Animation", "Applied Mathematics", 
-								"Biology", "Biomathematics", "Biomedical Engineering", "Business Administration",
-								"Chemistry", "Computer Science", "Computer Programming", "Criminal Justice", 
-								"Economics", "Electrical Engineering", "English", "Environmental Science",
-								"Game Design", "History", "Journalism", "Mechanical Engineering", "Photography",
-								"Physics", "Political Science", "Psychology", "Statistics", "Theatre"};
+		String[] choices = {"Advertising and Marketing", 
+								"Animation", 
+								"Applied Mathematics", 
+								"Biology", 
+								"Biomathematics", 
+								"Biomedical Engineering", 
+								"Business Administration",
+								"Chemistry", 
+								"Computer Science", 
+								"Computer Programming",
+								"Criminal Justice", 
+								"Economics", 
+								"Electrical Engineering", 
+								"English", 
+								"Environmental Science",
+								"Game Design", 
+								"History", 
+								"Journalism", 
+								"Mechanical Engineering",
+								"Photography",
+								"Physics", 
+								"Political Science", 
+								"Psychology", 
+								"Statistics", 
+								"Theatre"};
 		
 		comboBoxChoices = new JComboBox<String>(choices);
 		comboBoxChoices.setVisible(true);

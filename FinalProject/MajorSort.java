@@ -175,8 +175,7 @@ public class MajorSort
 				   "<br>\tTax Accountant";
 		else if (m.equals("Advertising and Marketing"))
 			return "<br>\tAdvertising" + 
-				   "<br>\tPromotions" + 
-				   "<br>\tMarketing Manager" + 
+				   "<br>\tPromotions and Marketing Manager" + 
 				   "<br>\tMarket Research Analyst" + 
 				   "<br>\tMeeting" + 
 				   "<br>\tConvention" + 
